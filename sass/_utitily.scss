@@ -1,0 +1,74 @@
+$main-color: #ffbc00;
+$color: #f4f4f4;
+$dark-color: #333;
+$media-color: #ccc;
+$fair-color: #fff;
+
+%btn-shared{
+    display: inline-block;
+    padding: .2rem .7rem;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    transition: all 0.7s;
+    border: none;
+    // border-radius: 15px;
+}
+.bg-light{
+    background: #ccc;
+}
+.bg-dark{
+    background: $dark-color;
+    color: $fair-color;
+}
+.btn{
+  &-main{
+      @extend %btn-shared;
+      color: $dark-color;
+      background-color: $media-color;
+      border-radius: 20px
+  }
+  &-light{
+      @extend %btn-shared;
+      color: $dark-color;
+      background-color: $fair-color;
+  }
+  &-dark{
+      @extend %btn-shared;
+      color: $fair-color;
+      background-color: $dark-color;
+  }
+  &:hover{
+      background-color: $main-color;
+  }
+}
+.lead{
+    font-size: 1.3rem;
+}
+.color-1{
+    color: $main-color
+}
+.color-2{color: $media-color}
+li{
+    list-style: none;
+}
+.py-1{
+    padding: 1rem 0;
+}
+.py-2{
+    padding: 2rem 0;
+}
+.py-3{
+    padding: 3rem 0;
+}
+.py-4{
+    padding: 4rem 0;
+}
+.mx{
+    margin: 0 15px;
+}
+img.cart{
+            
+    height: 54px;
+    margin-right: 30px;
+    width: 20px;
+}
